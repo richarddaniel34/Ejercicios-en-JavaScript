@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PESO EN OTRO PLANETA</title>
+  </head>
+
+  <body>
+    <h1>TU PESO EN OTRO PLANETA</H1>
+
+    <script>
+      var usuario =prompt ("INGRESA TU PESO");
+      var planeta =prompt ("INGRESA UN PLANETA \n 1-Mercurio. \n 2-Venus. \n 3-Tierra.\n 4-Marte. \n 5-Jupiter. \n 6-Saturno. \n 7-Urano. \n 8-Neptuno.\n 9-Pluton.");
+      var tuPeso = parseInt (usuario);
+      var gravedadMercurio =3.7;
+      var gravedadVenus = 8.87;
+      var gravedadTierra  = 9.8;
+      var gravedadMarte = 3.7;
+      var gravedadJupiter = 24.7;
+      var gravedadSaturno = 10.44;
+      var gravedadUrano = 8.87;
+      var gravedadNeptuno = 11.15;
+      var gravedadPluton = 0.62;
+      var pesoFinal;
+      var nombrePlaneta;
+
+      if (planeta==1)
+      {
+        pesoFinal= tuPeso*gravedadMercurio/gravedadTierra;
+        nombrePlaneta ="Mercurio"
+      }
+      else if (planeta==2)
+      {
+        pesoFinal= tuPeso*gravedadVenus/gravedadTierra;
+        nombrePlaneta ="Venus"
+      }
+      else if (planeta==3)
+      {
+        pesoFinal= tuPeso;
+        nombrePlaneta ="La Tierra"
+      }
+      else if (planeta==4)
+      {
+        pesoFinal= tuPeso*gravedadMarte/gravedadTierra;
+        nombrePlaneta ="Marte"
+      }
+      else if (planeta==5)
+      {
+        pesoFinal= tuPeso*gravedadJupiter/gravedadTierra;
+        nombrePlaneta ="Jupiter"
+      }
+      else if (planeta==6)
+      {
+        pesoFinal= tuPeso*gravedadSaturno/gravedadTierra;
+        nombrePlaneta ="Saturno"
+      }
+      else if (planeta==7)
+      {
+        pesoFinal= tuPeso*gravedadUrano/gravedadTierra;
+        nombrePlaneta ="Urano"
+      }
+      else if (planeta==8)
+      {
+        pesoFinal= tuPeso*gravedadNeptuno/gravedadTierra;
+        nombrePlaneta ="Neptuno"
+      }
+      else if (planeta==5)
+      {
+        pesoFinal= tuPeso*gravedadPluton/gravedadTierra;
+        nombrePlaneta ="Pluton"
+      }
+      else
+      {
+        pesoFinal= tuPeso*gravedadPluton/gravedadTierra;
+        nombrePlaneta ="Kripton"
+      }
+
+      pesoFinal =parseInt (pesoFinal);
+      document.write ("Tu peso en "+ nombrePlaneta + " es <strong> " + pesoFinal + " Kilos<strong>");
+
+    </script>
+
+  </body>
+</html>
